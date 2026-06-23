@@ -1,0 +1,473 @@
+:root {
+    --cor-primaria: #4CAF50;
+    --cor-secundaria: #333;
+    /* --cor-fundo: #f9f9f9; */
+    --cor-texto: #444;
+    --cor-de-fundo: #0f172a;
+    --cor-html: #F25D27;
+    --cor-css: #1d78e7;
+    --cor-js: #F2B236;
+    --fundo-principal: #222222;
+    --texto: #e0e0e0;
+    --texto-inverso: #333333;
+    --destaque: #ff5522;
+    --destaque-inverso: #a73917;
+    --fundo-card: #444444;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--cor-de-fundo);
+    color: #fff;
+}
+
+/* HERO */
+.hero{
+    min-height: 100vh;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-texto{
+    max-width: 600px;
+}
+
+.hero-texto h1{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.hero-texto p{
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: #cbd5e1;
+    margin-bottom: 30px;
+}
+
+.btn{
+    display: inline-block;
+    padding: 14px 28px;
+    background: #f97316;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: .3s;
+    font-weight: bold;
+}
+
+.btn:hover{
+    transform: translateY(-4px);
+}
+
+/* Foto de perfil */
+.hero-foto{
+    display: flex;
+    justify-content: center;
+}
+
+.hero-foto img{
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #f97316;
+    box-shadow: 0 0 30px rgba(249,115,22,.4); 
+     /*filter: drop-shadow(0 0 5px rgba(249,115,22,.4))
+      drop-shadow(0 0 10px rgba(249,115,22,.4))
+      drop-shadow(0 0 20px rgba(249,115,22,.4)) ;*/
+}
+
+/* SEÇÕES */
+section{
+    padding: 100px 10%;
+}
+
+section h2{
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #f97316;
+}
+
+section p{
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+#formacao-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+#formacao-container .curso {
+  background-color: var(--fundo-principal);
+  border-radius: 8px;
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 15px;
+  transition: border-width 0.5s, border-color 0.5s;
+}
+
+#formacao-container .curso:hover {
+  border-left-width: 15px;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+#formacao-container .periodo {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-container .instituicao {
+  color: var(--destaque-inverso);
+  font-size: 1.1em;
+}
+
+/* CARDS */
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    background: #1e293b;
+    padding: 20px 35px;
+    border-radius: 12px;
+    transition: .3s;
+    border: 1px solid transparent;
+}
+
+.card:hover{
+    border-color: #f97316;
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.card::before{
+    content: "🚀 ";
+}
+
+/*Habilidades*/
+.habilidades-container {
+  display: grid;
+  gap: 25px;
+}
+
+/*html*/
+.habilidade-html {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.habilidade-html .html{
+  font-size: 28px;
+  color: var(--cor-html);
+}
+
+.habilidade-html .html:hover{
+  filter:
+  drop-shadow(0 0 5px var(--cor-html))
+  drop-shadow(0 0 10px var(--cor-html))
+  drop-shadow(0 0 20px var(--cor-html));
+  transform: scale(1.2);
+}
+
+
+.habilidade-html span {
+  font-weight: bold;
+  min-width: 100px;
+}
+
+.barra-html {
+  flex: 1;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 15px;
+}
+
+.progresso-html {
+  background: var(--cor-html);
+  width: 30%;
+  height: 100%;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+/*CSS*/
+.habilidade-css {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.habilidade-css .css{
+  font-size: 28px;
+  color: var(--cor-css);
+}
+
+.habilidade-css .css:hover{
+  filter:
+  drop-shadow(0 0 5px var(--cor-css))
+  drop-shadow(0 0 10px var(--cor-css))
+  drop-shadow(0 0 20px var(--cor-css));
+  transform: scale(1.2);
+}
+
+.habilidade-css span {
+  font-weight: bold;
+  min-width: 100px;
+}
+
+.barra-css {
+  flex: 1;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 15px;
+}
+
+.progresso-css {
+  background: var(--cor-css);
+  width: 30%;
+  height: 100%;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+/*JS*/
+.habilidade-js {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.habilidade-js .js{
+  font-size: 28px;
+  color: var(--cor-js);
+}
+
+.habilidade-js .js:hover{
+  filter:
+  drop-shadow(0 0 5px var(--cor-js))
+  drop-shadow(0 0 10px var(--cor-js))
+  drop-shadow(0 0 20px var(--cor-js));
+  transform: scale(1.2);
+}
+
+.habilidade-js span {
+  font-weight: bold;
+  min-width: 100px;
+}
+
+.barra-js {
+  flex: 1;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 15px;
+}
+
+.progresso-js {
+  background: var(--cor-js);
+  width: 20%;
+  height: 100%;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+/*GIT*/
+.habilidade-git {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.habilidade-git .git{
+  font-size: 28px;
+  color: var(--destaque);
+}
+
+.habilidade-git .git:hover{
+  filter:
+    drop-shadow(0 0 5px var(--destaque))
+    drop-shadow(0 0 10px var(--destaque))
+    drop-shadow(0 0 20px var(--destaque));
+    transform: scale(1.2);
+}
+
+.habilidade-git span {
+  font-weight: bold;
+  min-width: 100px;
+}
+
+.barra-git {
+  flex: 1;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 15px;
+}
+.progresso-git {
+  background: var(--destaque);
+  width: 10%;
+  height: 100%;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+/*GITHUB*/
+.habilidade-github {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.habilidade-github .github{
+  font-size: 28px;
+  color: #b918ce;
+}
+
+.habilidade-github span {
+  font-weight: bold;
+  min-width: 100px;
+}
+
+.barra-github {
+  flex: 1;
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 15px;
+}
+.progresso-github {
+  background: #b918ce;
+  width: 10%;
+  height: 100%;
+  border-radius: 20px;
+  transition: width 1s ease-in-out;
+}
+
+/* FOOTER */
+.footer{
+    padding: 60px;
+    text-align: center;
+    border-top: 1px solid #1e293b;
+}
+
+.footer h2{
+    margin-bottom: 25px;
+    color: #f97316;
+}
+
+.footer a{
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.footer i{
+    font-size: 1.7em;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+/* GitHub */
+.github{
+    color: #FFF;
+}
+
+.github:hover{
+  filter:
+    drop-shadow(0 0 5px #fff)
+    drop-shadow(0 0 10px #fff)
+    drop-shadow(0 0 20px #fff);
+    transform: scale(1.2);
+    color: #333;
+}
+
+/* LinkedIn */
+.linkedin{
+    background-color: #0077b5;
+    color: #fff;
+
+}
+
+.linkedin:hover{
+  filter:
+    drop-shadow(0 0 5px #0077b5)
+    drop-shadow(0 0 10px #0077b5)
+    drop-shadow(0 0 20px #0077b5);
+  transform: scale(1.2);
+  color: #fff;
+}
+
+/* Instagram */
+.instagram{
+    color: #e1306c; 
+}
+
+.instagram:hover{
+  filter: 
+    drop-shadow(0 0 5px #ff2d75)
+    drop-shadow(0 0 10px #ff2d75)
+    drop-shadow(0 0 20px #ff2d75); 
+  transform: scale(1.2);
+  color: #f33b78;
+}
+
+/*whats*/
+.whats{
+    color: #279012;
+}
+
+.whats:hover{
+    filter:
+      drop-shadow(0 0 5px #279012)
+      drop-shadow(0 0 10px #279012)
+      drop-shadow(0 0 20px #279012);
+    transform: scale(1.2);
+    color: #30af17;
+}
+
+/* RESPONSIVO */
+@media(max-width: 900px){
+
+    .hero{
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 80px;
+    }
+
+    .hero-texto h1{
+        font-size: 3rem;
+    }
+
+    .hero-foto img{
+        width: 240px;
+        height: 240px;
+    }
+
+    .cards{
+        justify-content: center;
+    }
+
+    section{
+        padding: 80px 5%;
+    }
+}
