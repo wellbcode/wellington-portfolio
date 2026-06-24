@@ -142,3 +142,88 @@ body.light{
 .botoes a:hover{
     opacity: .8;
 }
+
+/* =========================
+   RESPONSIVO PORTFÓLIO
+========================= */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .projetos {
+    padding: 60px 5%;
+  }
+
+  .projetos-container {
+    gap: 20px;
+  }
+
+  .card-projeto {
+    width: 300px;
+  }
+}
+
+/* Mobile grande */
+@media (max-width: 768px) {
+  .projetos {
+    padding: 50px 5%;
+  }
+
+  .projetos h2 {
+    font-size: 2rem;
+  }
+
+  .projetos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-projeto {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .card-conteudo {
+    padding: 18px;
+  }
+
+  .botoes {
+    flex-direction: column;
+  }
+
+  .botoes a {
+    width: 100%;
+  }
+}
+
+/* Mobile pequeno */
+@media (max-width: 480px) {
+  .projetos {
+    padding: 40px 4%;
+  }
+
+  .projetos h2 {
+    font-size: 1.7rem;
+  }
+
+  .card-projeto img {
+    height: 180px;
+  }
+
+  .tecnologias {
+    flex-wrap: wrap;
+  }
+
+  .tecnologias span {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+
+  .card-conteudo p {
+    font-size: 0.9rem;
+  }
+
+  .botoes a {
+    padding: 12px;
+    font-size: 0.95rem;
+  }
+}
