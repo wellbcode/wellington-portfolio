@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3220c0aca7.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./img/projeto.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/projetos.css">
+    <title>Meus projetos</title>
+</head>
+<body>
+    <section id="projetos" class="projetos">
+        <i id="dark-mode" class="fa-solid fa-moon"></i>
+        <h2><i class="fa-solid fa-trowel-bricks"></i>Meus Projetos</h2>
+
+        <div class="projetos-container">
+
+            <article class="card-projeto"> <!--Projeto Gerenciador de tarefas-->
+                <img src="./img/list-to-do.PNG" alt="Projeto Gerenciador de tarefas">
+
+                <div class="card-conteudo">
+                    <h3>Gerenciador de Tarefas</h3>
+
+                    <p>
+                        Gerenciador de tarefas simples e eficiente para organizar
+                        seu dia a dia com praticidade.
+                    </p>
+
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Bootstrap</span>
+                    </div>
+
+                    <div class="botoes">
+                        <a href="https://wellbcode.github.io/Task-manager/" target="_blank" rel="noopener">Demo</a>
+                        <a href="https://github.com/wellbcode/Task-manager" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-projeto"> <!--Projeto ONG-->
+                <img src="./img/projeto-03-ong.jpg" alt="Projeto: ONG">
+
+                <div class="card-conteudo">
+                    <h3>ONG Educar para mudar</h3>
+                    <p>
+                        Projeto acadêmico voltado ao desenvolvimento de um site institucional
+                        para uma ONG fictícia.
+                    </p>
+
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="botoes">
+                        <a href="https://wellbcode.github.io/ong-educar-para-mudar/" target="_blank" rel="noopener">Demo</a>
+                        <a href="https://github.com/wellbcode/ong-educar-para-mudar.git" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-projeto"> <!--Status de envio de crachás-->
+                <img src="./img/credenciais.PNG" alt="Projeto: Status de envio de crachás">
+
+                <div class="card-conteudo">
+                    <h3>Gerenciador de envio de credenciais</h3>
+
+                    <p>
+                        Site desenvolvido para acompanhar
+                        o andamento do envio de credenciais.
+                    </p>
+
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="botoes">
+                        <a href="https://wellbcode.github.io/acompanhar-envio-crachas/" target="_blank" rel="noopener">Demo</a>
+                        <a href="https://github.com/wellbcode/acompanhar-envio-crachas.git" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="card-projeto"> <!--Projeto Controle de Estacionamento-->
+                <img src="./img/estacionamento.PNG" alt="Projeto: Controle de Estacionamento">
+
+                <div class="card-conteudo">
+                    <h3>Controle de Estacionamento</h3>
+
+                    <p>
+                        Site desenvolvido para identificar proprietários
+                        de veículos atráves de consulta ágil por placas..
+                    </p>
+
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="botoes">
+                        <a href="https://wellbcode.github.io/Controle-de-estacionamento/" target="_blank" rel="noopener">Demo</a>
+                        <a href="https://github.com/wellbcode/Controle-de-estacionamento.git" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-projeto"> <!--Projeto  Sistema de consulta de crachás-->
+                <img src="./img/crachas.PNG" alt="Projeto: Sistema de consulta de crachás">
+
+                <div class="card-conteudo">
+                    <h3>Consulta de crachás</h3>
+
+                    <p>
+                        Site desenvolvido para identificar a localidade
+                        de crachás.
+                    </p>
+
+                    <div class="tecnologias">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="botoes">
+                        <a href="https://wellbcode.github.io/Consulta-crachas/" target="_blank" rel="noopener">Demo</a>
+                        <a href="https://github.com/wellbcode/consulta-crachas.git " target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <script>
+        const btnDarkMode = document.getElementById("dark-mode");
+
+        btnDarkMode.addEventListener("click", () => {
+            document.body.classList.toggle("light");
+
+            if(document.body.classList.contains("light")){
+                btnDarkMode.classList.remove("fa-moon");
+                btnDarkMode.classList.add("fa-sun");
+            }else{
+                btnDarkMode.classList.remove("fa-sun");
+                btnDarkMode.classList.add("fa-moon");
+            }
+        });
+    </script>
+</body>
+</html>
