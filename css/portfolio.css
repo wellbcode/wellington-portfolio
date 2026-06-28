@@ -119,6 +119,7 @@ section p{
   border-left: 5px solid var(--destaque-inverso);
   padding-left: 15px;
   transition: border-width 0.5s, border-color 0.5s;
+  filter: drop-shadow(2px 1px 5px #00c6d4) ;
 }
 
 #formacao-container .curso:hover {
