@@ -1,7 +1,6 @@
 :root {
     --cor-primaria: #4CAF50;
     --cor-secundaria: #333;
-    /* --cor-fundo: #f9f9f9; */
     --cor-texto: #444;
     --cor-de-fundo: #0f172a;
     --cor-html: #F25D27;
@@ -119,7 +118,7 @@ section p{
   border-left: 5px solid var(--destaque-inverso);
   padding-left: 15px;
   transition: border-width 0.5s, border-color 0.5s;
-  filter: drop-shadow(2px 1px 5px #00c6d4) ;
+  filter: drop-shadow(2px 1px 5px #031847) ;
 }
 
 #formacao-container .curso:hover {
