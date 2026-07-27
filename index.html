@@ -3,165 +3,787 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellington Bertoso Santos| Portfólio</title>
+    <link rel="shortcut icon" href="image/image.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/3220c0aca7.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
     <link rel="stylesheet" href="css/portfolio.css">
-    <link rel="shortcut icon" href="img/image.png" type="image/x-icon">
-    <title>Meu Portfólio</title>
 </head>
 <body>
-<section class="hero"> <!--Perfil-->
-    <div class="hero-texto">
-        <!-- <h1><i class="fa-solid fa-hand"></i> Olá, eu sou Wellington</h1> -->
-        <h1><i class="fa-solid fa-hand-spock"></i> Olá, eu sou Wellington</h1>
-               
-        <p>
-            Desenvolvedor Front-end em formação,
-            construindo projetos com HTML, CSS,
-            JavaScript e estudando Angular para dar o
-            próximo passo na carreira.
-        </p>
+    <!-- ================= Barra de navegação ================== -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <strong>Wellington Bertoso Santos</strong>
+            </a>
 
-        <a href="projetos.html" target="_self" class="btn">
-            Ver Projetos
-        </a>
-    </div>
+            <!-- ======= Botão modo escuro ======== -->
+            <button 
+                id="darkMode" 
+                class="btn btn-sm ms-3" 
+                title="Alternar modo escuro">
+                <i class="bi bi-moon"></i>
+            </button>
 
-    <div class="hero-foto">
-        <img src="./img/well-perfil.jpg" alt="Wellington">
-    </div>
-</section>
+            <button 
+                class="navbar-toggler" 
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                title="Menu hambuguer">
+                <i class="bi bi-list"></i>
+            </button>
 
-<section> <!--sobre mim*-->
-    <h2><i class="fa-regular fa-circle-user"></i> Sobre Mim</h2>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Início</a>
+                    </li>
 
-    <p>
-        Estudante de Análise e Desenvolvimento de Sistemas,
-        cursando o 2º Semestre pela Universidade Cruzeiro do Sul Virtual, (Unicsul).
-        Aprendendo e compartilhando conhecimentos através da prática e da colaboração
-        de cursos online e projetos de código aberto.
-        Minha jornada na programação começou através da
-        curiosidade e da vontade de resolver problemas
-        reais.
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
 
-        Desde então venho desenvolvendo projetos,
-        estudando tecnologias web e aplicando soluções
-        que melhoram processos do dia a dia.
-    </p>
-</section>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
 
-<section> <!--Formação-->
-  <article id="formacao">
-    <h2><i class="fa-solid fa-graduation-cap"></i> Formação</h2>
-    <div id="formacao-container">
-       <!--  <div class="curso">
-            <p class="periodo">1994 - 1997</p>
-            <h3 class="instituicao">EEPG Prof: Maria Margarida de Abreu Figueiredo</h3>
-            <p class="titulacao">Ensino Fundamental</p>
-        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiência</a>
+                    </li>
 
-        <div class="curso">
-            <p class="periodo">1998 - 2004</p>
-            <h3 class="instituicao">EE Jardim São Fernando</h3>
-            <p class="titulacao">Ensino Médio</p>
-        </div>-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
+                    </li>
 
-        <div class="curso">
-            <p class="periodo">2010 - 2014</p>
-            <h3 class="instituicao">Instituição de Ensino Superior Sumaré - ISES</h3>
-            <p class="titulacao">Bacharelado em Secretariado Executivo Bílingue (não concluído)</p>
-        </div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#galeria">Galeria</a>
+                    </li>
 
-        <div class="curso">
-            <p class="periodo">2020 - 2024</p>
-            <h3 class="instituicao">Instituição de Ensino Superior Sumaré - ISES</h3>
-            <p class="titulacao">Bacharelado em Sistemas de Informação (não concluído)</p>
-        </div> 
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depoimentos">Depoimentos</a>
+                    </li>
 
-        <div class="curso">
-            <p class="periodo">2025 - 2027</p>
-            <h3 class="instituicao">Universidade Cruzeiro do Sul - Unicsul</h3>
-            <p class="titulacao">Tecnológo em Análise e Desenvolvimento de Sistemas (em andamento)</p>
-        </div>
-    </div>
-  </article> <!--Fim-->
-</section>         
-
-<section> <!--Tecnologias-->
-    <h2><i class="fa-solid fa-code"></i> Tecnologias</h2>
-
-    <div class="cards">
-        <div class="card">HTML</div>
-        <div class="card">CSS</div>
-        <div class="card">JavaScript</div>
-        <div class="card">Git</div>
-        <div class="card">GitHub</div>
-         <!--  <div class="card">Angular</div> -->
-    </div>
-</section>
-
-<section> <!--Habilidades-->
-  <h2><i class="fa-solid fa-brain"></i> Habilidades</h2>
-  <div class="habilidades-container">
-        <div class="habilidade-html">
-            <i class="fab fa-html5 html"></i>
-            <span>HTML - 30%</span>
-            <div class="barra-html">
-                <div class="progresso-html"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </nav>
 
-        <div class="habilidade-css">
-            <i class="fab fa-css3-alt css"></i>
-            <span>CSS - 30%</span>
-            <div class="barra-css">
-                <div class="progresso-css"></div>
+    <!-- ================== Hero - Perfil ====================== -->
+    <section id="inicio" class="hero py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <span class="badge bg-success mb-3">Portfólio Profissional</span>
+                    <h1>Wellington Bertoso Santos
+                        <span>
+                            <i class="fa-solid fa-hand-spock"></i>
+                        </span>
+                    </h1>
+
+                    <h2>Desenvolvedor Front-End</h2>
+
+                    <p>
+                        Estudante de Análise e Desenvolvimento de Sistemas,
+                        criando interfaces modernas, responsivas e funcionais
+                        utilizando HTML, CSS, JavaScript e Bootstrap.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projetos" class="btn btn-primary me-2">Ver projetos</a>
+                        <a href="#contato" class="btn btn-outline-primary">Entre em contato</a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 text-center">
+                    <div class="perfil">
+                        <img src="picture/well-perfil.jpg" alt="Foto de Wellington">
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="habilidade-js">
-            <i class="fab fa-js js"></i>
-            <span>JavaScrip - 20%</span>
-            <div class="barra-js">
-                <div class="progresso-js"></div>
+    <!-- ================= Seção Sobre mim ===================== -->
+    <section id="sobre" class="sobre py-5">
+        <div class="container">
+            <h2 class="text-center mb-5"><strong>Sobre mim <i class="fa-regular fa-circle-user"></i></strong></h2>
+
+            <div class="row align-items-center g-4">
+                <!-- TEXTO -->
+                <div class="col-lg-6">
+                    <h3><strong>Desenvolvedor Front-End em formação</strong></h3>
+
+                    <p>
+                        Sou estudante de Análise e Desenvolvimento de Sistemas,
+                        com foco em desenvolvimento Front-End. Tenho interesse
+                        em criar interfaces modernas, responsivas e com boa
+                        experiência para o usuário.
+                    </p>
+
+                    <p>
+                        Durante minha jornada venho desenvolvendo projetos
+                        utilizando HTML, CSS, JavaScript, Bootstrap e Git/GitHub,
+                        buscando sempre melhorar minhas habilidades através da
+                        prática e novos desafios.
+                    </p>
+                </div>
+
+                <!-- ======== Informações ========= -->
+                <div class="col-lg-6">
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <div class="info-card">
+                                <i class="bi bi-mortarboard"></i>
+                                <h4><strong>Formação</strong></h4>
+                                <p>Análise e Desenvolvimento de Sistemas</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="info-card">
+                                <i class="bi bi-code-slash"></i>
+                                <h4><strong>Front-End</strong> </h4>
+                                <p>HTML, CSS, JavaScript e Bootstrap</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="info-card">
+                                <i class="bi bi-folder2-open"></i>
+                                <h4><strong>Projetos</strong>
+                                </h4>
+                                <p> Aplicações Web e sistemas responsivos</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="info-card">
+                                <i class="bi bi-github"></i>
+                                <h4><strong> Versionamento</strong> </h4>
+                                <p>Git e GitHub para organização dos projetos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="habilidade-git">
-            <i class="fa-brands fa-git-alt git"></i>
-            <span>Git - 10%</span>
-            <div class="barra-git">
-                <div class="progresso-git"></div>
+    <!-- ================ Seção Habilidades ==================== -->
+    <section id="habilidades" class="habilidades py-5">
+        <div class="container">
+            <h2 class="text-center mb-5"><strong>Habilidades <i class="fa-solid fa-brain"></i></strong></h2>
+
+            <div class="row align-items-center g-4">
+                <div class="skills">
+                    <div class="habilidade-html">
+                        <i class="fab fa-html5 html"></i>
+                        <span>HTML</span>
+                        <div class="barra-html">
+                            <div class="progresso-html"></div>
+                        </div>
+                    </div>
+
+                    <div class="habilidade-css">
+                        <i class="fab fa-css3-alt css"></i>
+                        <span>CSS</span>
+                        <div class="barra-css">
+                            <div class="progresso-css"></div>
+                        </div>
+                    </div>
+
+                    <div class="habilidade-js">
+                        <i class="fab fa-js js"></i>
+                        <span>JavaScript</span>
+                        <div class="barra-js">
+                            <div class="progresso-js"></div>
+                        </div>
+                    </div>
+
+                    <div class="habilidade-git">
+                        <i class="fa-brands fa-git-alt git"></i>
+                        <span>Git</span>
+                        <div class="barra-git">
+                            <div class="progresso-git"></div>
+                        </div>
+                    </div>
+
+                    <div class="habilidade-github">
+                        <i class="fa-brands fa-github github1"></i>
+                        <span>Github</span>
+                        <div class="barra-github">
+                            <div class="progresso-github"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </section>
+
+    <!-- ================== Seção Minha jornada ================ -->
+    <section id="experiencia" class="experiencia py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <strong>Minha Jornada <i class="fa-solid fa-trophy"></i></strong>
+            </h2>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span>2025</span>
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
+
+                        <p>
+                            Início da graduação em ADS,
+                            aprofundando conhecimentos em
+                            programação, banco de dados e
+                            desenvolvimento de sistemas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span>2025 - 2026</span>
+                        <h3>Desenvolvimento Front-End</h3>
+
+                        <p>
+                            Estudos e prática com HTML,
+                            CSS, JavaScript, Bootstrap e
+                            criação de interfaces responsivas.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span>2026</span>
+                        <h3>Projetos - Aplicações Web</h3>
+
+                        <p>
+                            Desenvolvimento de projetos
+                            como ONG Educar para Mudar,
+                            Controle de Estacionamento e
+                            Sistema de Acompanhamento.
+
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="habilidade-github">
-            <i class="fa-brands fa-github github"></i>
-            <span>Github - 10%</span>
-            <div class="barra-github">
-                <div class="progresso-github"></div>
+    <!-- ================== Seção Meus Projetos ================ -->
+    <section id="projetos" class="projetos py-5">
+        <div class="container">
+            <h2 class="text-center mb-5"><strong>Meus Projetos <i class="fa-solid fa-laptop-code"></i></strong></h2>
+            <div class="row g-4">
+
+                <!-- Projeto 1 ONG Educar para Mudar-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <img src="image/ong.jpg" alt="Projeto ONG Educar para Mudar">
+
+                        <div class="project-content">
+                            <h3><strong>ONG Educar para Mudar</strong></h3>
+                            <p>
+                                Website institucional desenvolvido para uma
+                                organização social, com foco em responsividade,
+                                acessibilidade e experiência do usuário.
+                            </p>
+
+                            <div class="tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>Bootstrap</span>
+                            </div>
+
+                            <div class="project-buttons">
+                                <a href="https://wellbcode.github.io/ong-educar-para-mudar/" target="_blank" rel="noopener" class="btn btn-primary">Site</a>
+                                <a href="https://github.com/wellbcode/ong-educar-para-mudar.git" target="_blank" rel="noopener" class="btn btn-outline-primary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 Gerenciador de envio de credenciais-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <img src="image/credenciais.PNG" alt="Sistema de acompanhamento de crachás">
+                        <div class="project-content">
+                            <h3><strong>Gerenciador de envio</strong></h3>
+
+                            <p>
+                                Sistema de consulta desenvolvido em JavaScript
+                                com leitura de dados através de planilha Excel.
+                            </p>
+
+                            <div class="tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+
+                            <div class="project-buttons">
+                                <a href="https://wellbcode.github.io/Sistema-de-envio/" target="_blank" rel="noopener" class="btn btn-primary"> Site</a>
+                                <a href="https://github.com/wellbcode/Sistema-de-envio.git" target="_blank" rel="noopener" class="btn btn-outline-primary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 Consulta de placas-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <img src="image/estacionamento.PNG" alt="Controle de estacionamento">
+                        <div class="project-content">
+                            <h3><strong>Consulta de placas</strong></h3>
+
+                            <p>
+                                Aplicação web para gerenciamento de vagas,
+                                utilizando conceitos de organização de dados
+                                e interface dinâmica.
+                            </p>
+
+                            <div class="tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+
+                            <div class="project-buttons">
+                                <a  href="https://wellbcode.github.io/Controle-de-estacionamento/" target="_blank" rel="noopener" class="btn btn-primary">Site</a>
+                                <a href="https://github.com/wellbcode/Controle-de-estacionamento.git" target="_blank" rel="noopener" class="btn btn-outline-primary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 Gerenciador de Tarefas-->
+                <div class="col-lg-4 col-md-6">
+                    <div class="project-card">
+                        <img src="image/ger-tarefas.PNG" alt="Gerenciador de Tarefas">
+                        <div class="project-content">
+                            <h3><strong> Gerenciador de Tarefas</strong></h3>
+
+                            <p>
+                                Aplicação web para gerenciamento de vagas,
+                                utilizando conceitos de organização de dados
+                                e interface dinâmica.
+                            </p>
+
+                            <div class="tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+
+                            <div class="project-buttons">
+                                <a href="https://wellbcode.github.io/Task-manager/" class="btn btn-primary" target="_blank" rel="noopener">Site</a>
+                                <a href="https://github.com/wellbcode/Task-manager" class="btn btn-outline-primary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 5 Consulta de Crachás-->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="project-card">
+                        <img src="image/crachas.PNG" alt="Consulta de Crachás">
+                        <div class="project-content">                            
+                            <h3><strong>Consulta de Crachás</strong></h3>
+                            
+                            <p>
+                                Aplicação web para identificar a localidade de crachás,
+                                utilizando conceitos de organização de dados
+                                e interface dinâmica.
+                            </p>
+                            
+                            <div class="tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                            </div>
+
+                            <div class="project-buttons">
+                                <a href="https://wellbcode.github.io/Consulta-crachas/" target="_blank" rel="noopener" class="btn btn-primary">Site</a>
+                                <a href="https://github.com/wellbcode/consulta-crachas.git " target="_blank" rel="noopener" class="btn btn-outline-primary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 6 Porfólio Mayra-->
+                <div class="col-lg-4 col-md-6">
+
+                    <div class="project-card">
+                        <img src="image/por-amiga.PNG" alt="Porfólio da minha amiga">
+                        <div class="project-content">                            
+                            <h3><strong>Portfóliio Profisional</strong></h3>
+                            
+                            <p>
+                                Portfólio desenvolvido para apresentar projetos, habilidades e experiências.
+                            </p>
+                            
+                            <div class="tech">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JS</span>
+                                <span>Bootstrap</span>
+                            </div>
+
+                            <div class="project-buttons">
+                                <a href="https://wellbcode.github.io/portfolio-mayra/" target="_blank" rel="noopener" class="btn btn-primary">Site</a>
+                                <a href="https://github.com/wellbcode/portfolio-mayra.git " target="_blank" rel="noopener" class="btn btn-outline-primary">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================ Seção Galeria de Projetos ============ -->
+    <section id="galeria" class="galeria py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                <strong>Galeria de Projetos <i class="fa-solid fa-folder-open"></i></strong>
+            </h2>
+
+            <div class="row g-4">
+                <!-- Projeto 1 ONG Educar para Mudar -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-card"
+                        data-projeto="gerenciador"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalGaleria">
+
+                        <img src="img/projetos/ong.jpg"
+                            class="img-fluid"
+                            alt="Projeto ONG">
+
+                        <div class="gallery-overlay">
+                            <h5>ONG</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 2 Gerenciador de envio -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-card"
+                        data-projeto="ong"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalGaleria">
+
+                        <img src="img/projetos/credenciais.PNG"
+                            class="img-fluid"
+                            alt="Projeto de Gerenciar status">
+
+                        <div class="gallery-overlay">
+                            <h5>Gerenciador de envio</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 3 Consulta de placas -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-card"
+                        data-projeto="portfolio"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalGaleria">
+
+                        <img src="img/projetos/estacionamento.PNG"
+                            class="img-fluid"
+                            alt="Projeto consulta de placas">
+                        <div class="gallery-overlay">
+                            <h5>Consulta de placas</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 Gerenciador de Tarefas -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-card"
+                        data-projeto="gerenciador"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalGaleria">
+
+                        <img src="img/projetos/ger-tarefas.PNG"
+                            class="img-fluid"
+                            alt="Projeto Gerenciador de Tarefas">
+                        <div class="gallery-overlay">
+                            <h5>Gerenciador de Tarefas</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 5 Consulta de crachás -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-card"
+                        data-projeto="portfolio"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalGaleria">
+
+                        <img src="img/projetos/crachas.PNG"
+                            class="img-fluid"
+                            alt="Projeto Sistema de Consulta de crachás">
+                        <div class="gallery-overlay">
+                            <h5>Consulta de crachás</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projeto 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-card"
+                        data-projeto="portfolio"
+                        data-bs-toggle="modal"
+                        data-bs-target="#modalGaleria">
+
+                        <img src="img/projetos/por-amiga.PNG"
+                            class="img-fluid"
+                            alt="Projeto Portfóliio Profisional">
+                        <div class="gallery-overlay">
+                            <h5>Portfóliio Profisional</h5>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
         </div>
-  </div>
-</section>
+    </section>
 
-<footer class="footer"> <!--Rodapé-->
-    <h2>Vamos conversar?</h2>
-    <a href="https://github.com/wellbcode" target="_blank" rel="noopener noreferrer" title="github">
-    <i class="fa-brands fa-github github"></i>
-</a>
+    <!-- ======== Modal da Seção Galeria de Projetos ============ -->
+    <div class="modal fade" id="modalGaleria" tabindex="-1"  aria-labelledby="tituloProjeto">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 id="tituloProjeto" class="modal-title"></h4>
+                    <button class="btn-close"
+                        data-bs-dismiss="modal" aria-label="Botão de fechar a galeria">
+                    </button>
+                </div>
 
-<a href="https://www.linkedin.com/in/wellington-bertoso-santos-72a099263/" target="_blank" rel="noopener noreferrer" title="linkedin">
-    <i class="fa-brands fa-linkedin-in linkedin"></i>
-</a>
+                <div class="modal-body">
+                    <div id="carouselGaleria" class="carousel slide"
+                        data-bs-ride="carousel"data-bs-interval="3000" data-bs-pause="hover">
+                        <div class="carousel-inner" id="carouselInner"></div>
+                        <!--Bolinhas-->
+                        <div class="carousel-indicators" id="carouselIndicators"></div>
 
-<a href="https://www.instagram.com/well90751/" target="_blank" rel="noopener noreferrer" title="instagram">
-    <i class="fa-brands fa-instagram instagram"></i>
-</a>
+                        <button class="carousel-control-prev"
+                            type="button"
+                            data-bs-target="#carouselGaleria"
+                            data-bs-slide="prev" aria-label="Botão de de passar para o anterior">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
 
-<a  href="https://api.whatsapp.com/send?phone=5511967684819&text=Ol%C3%A1%20peguei%20seu%20contato%20no%20site" target="_blank" rel="noopener noreferrer" title="whats">
-    <i class="fa-brands fa-whatsapp whats"></i>
-</a>
-</footer>
+                        <button class="carousel-control-next"
+                            type="button"
+                            data-bs-target="#carouselGaleria"
+                            data-bs-slide="next" aria-label="Botão de de passar para o próximo">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                    </div>
+
+                    <!-- Informações do slide -->
+                    <div class="carousel-info">
+                        <div class="slide-titulo" id="tituloSlide"></div>
+                        <div class="slide-contador" id="contadorSlide"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================== Seção Depoimentos =================== -->
+    <section id="depoimentos" class="depoimentos py-5">
+        <div class="container">
+
+            <div class="text-center mb-5">
+                <h2 class="text-center mb-5"><strong>Depoimentos <i class="fa-solid fa-comments"></i></strong></h2>
+                <p class="text-muted">
+                    Algumas opiniões de pessoas que acompanharam meu trabalho e desenvolvimento.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card h-100">
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="testimonial-text">
+                            "Well demonstrou organização, comprometimento e dedicação durante o desenvolvimento de cada projeto, Eu diria que ele está no caminho certo em sua jornada."
+                        </p>
+
+                        <div class="testimonial-user">
+                            <!-- <img src="picture/depoimentos/avatar1.jpg" alt="Professor"> -->
+                            <img src="picture/simone-ft.PNG" alt="Mentora">
+                            <div>
+                                <h5>Simone de Segura Marchini</h5>
+                                <span>Mentora</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card h-100">
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="testimonial-text">
+                            "Agradecimento especial ao Well pela dedicação e parceria na criação de soluções.
+                            Obrigada por contribuir para tornar o nosso trabalho mais eficaz!"
+                        </p>
+
+                        <div class="testimonial-user">
+                            <img src="picture/ingrid-ft.PNG" alt="Colega">
+                            <div>
+                                <h5>Ingrid Souza</h5>
+                                <span>Colega de Trabalho</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 mx-md-auto">
+                    <div class="testimonial-card h-100">
+                        <div class="testimonial-stars">
+                            ★★★★★
+                        </div>
+
+                        <p class="testimonial-text">
+                            "Well está sempre buscando se desenvolver na sua área de atuação, sempre com bastante empenho, especialmente para resolver problemas e garantir soluções inteligentes."
+                        </p>
+
+                        <div class="testimonial-user">
+                            <img src="picture/breno-ft.PNG" alt="Colega">
+                            <div>
+                                <h5>Brenno</h5>
+                                <span>Colega de Trabalho</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= Seção Entre em Contato =============== -->
+    <section id="contato" class="contato py-5">
+        <div class="container">
+            <h2 class="text-center mb-5"><strong>Entre em Contato <i class="fa-solid fa-paper-plane"></i></strong></h2>
+            <div class="row g-5 align-items-center">
+                <!-- Informações -->
+                <div class="col-lg-5">
+                    <h3><strong> Vamos conversar? <i class="fa-chisel fa-regular fa-at"></i> 
+                        <i class="fa-solid fa-phone"></i></strong></h3>
+                    <p>
+                        Estou aberto a oportunidades,
+                        projetos e novos desafios na área
+                        de desenvolvimento.
+                    </p>
+
+                    <div class="contact-item">
+                        <i class="bi bi-envelope email"></i>
+                        <a class="l-email" href="mailto:seuemail@gmail.com">welllingtonb.santos@hotmail.com</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="bi bi-github github"></i>
+                        <a class="l-github" href="#" target="_blank">github.com/wellbcode</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-brands fa-linkedin-in linkedin"></i>
+                        <a class="l-email" href="#" target="_blank">www.linkedin.com/in/wellington-bertoso-santos-72a099263/</a>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-brands fa-whatsapp whats"></i>
+                        <a class="l-whats" href="https://api.whatsapp.com/send?phone=5511967684819&text=Ol%C3%A1%20peguei%20seu%20contato%20no%20site" target="_blank" rel="noopener noreferrer" title="whats">(11) 96768-4819
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Formulário de contato -->
+                <div class="col-lg-7">
+                        <form id="formContato" class="contact-form">
+                            <input type="text" id="nome" name="nome" class="form-control mb-3" placeholder="Nome" required>
+                            <input type="email" id="email" name="email" class="form-control mb-3" placeholder="E-mail" autocomplete="email" required>
+                            <textarea id="mensagem" name="mensagem" class="form-control mb-3" rows="5" placeholder="Mensagem" required>
+                            </textarea>                       
+                            <button type="submit" id="btnEnviar" class="btn btn-success enviar">
+                                <i class="fa-solid fa-paper-plane"></i>Enviar
+                            </button>
+                        </form>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== Seção Rodapé ===================== -->
+    <footer class="footer">
+        <div class="container text-center">
+            <h3>Wellington Bertoso Santos</h3>
+            <p>Desenvolvedor Front-End em formação</p>
+
+            <div class="social-footer">
+                <a href="https://github.com/wellbcode" target="_blank" rel="noopener noreferrer" title="github">
+                    <i class="fa-brands fa-github github"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/wellington-bertoso-santos-72a099263/" target="_blank" rel="noopener noreferrer" title="linkedin">
+                    <i class="fa-brands fa-linkedin-in linkedin"></i>
+                </a>
+
+                <a href="https://www.instagram.com/well90751/" target="_blank" rel="noopener noreferrer" title="instagram">
+                    <i class="fa-brands fa-instagram instagram"></i>
+                </a>
+
+                <a  href="https://api.whatsapp.com/send?phone=5511967684819&text=Ol%C3%A1%20peguei%20seu%20contato%20no%20site" target="_blank" rel="noopener noreferrer" title="whats">
+                    <i class="fa-brands fa-whatsapp whats"></i>
+                </a>
+                 
+                <a href="mailto:wellingtonb.santos@hotmail.com?subject=Contato%20pelo%20Portfólio" title="Email">
+                    <i class="bi bi-envelope email"></i>
+                </a>
+            </div>
+
+            <p class="copyright">© 2026 By 🔶 WBS - Soluções - Wellington Bertoso.Todos os direitos reservados</p>
+    
+            <a href="#inicio" class="top" title="Botão de voltar ao topo"><i class="bi bi-arrow-up"></i></a>
+        </div>
+    </footer>
+
+    <!-- ===================== Bibliotecas ======================= -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- ================== Scripts do Projeto ================== -->
+    <script src="js/portfolio.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
+

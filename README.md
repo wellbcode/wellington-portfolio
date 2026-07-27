@@ -1,4 +1,4 @@
-🚀 Portfólio Pessoal - Wellington Bertoso
+🚀 Portfólio Pessoal - Wellington Bertoso Santos
 
 Este é o meu portfólio desenvolvido para apresentar meus projetos, habilidades e experiências como desenvolvedor web.
 O projeto foi construído com foco em design moderno, responsividade e boa experiência do usuário.
@@ -9,10 +9,9 @@ O projeto foi construído com foco em design moderno, responsividade e boa exper
 
 🔗 Acesse o portfólio: ([https://wellbcode.github.io/wellington-portfolio/])
  
- ----
+----
 
-📸 Layout
-
+📸 Layou
 O projeto conta com:
 
 Interface moderna com tema escuro
