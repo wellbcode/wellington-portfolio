@@ -106,17 +106,41 @@ document.addEventListener("DOMContentLoaded", () => {
     const projetos = {
         gerenciador:[
             {
-                imagem: "img/galeria/gerenciador/01-login.png",
-                titulo: "Tela de login"
+                imagem: "img/galeria/gerenciador/tela01-saudacao.png",
+                titulo: "Tela inicial Mensagem de Boas vindas!"
             },
             {
-                imagem: "img/galeria/gerenciador/02-logado.png",
-                titulo: ""
+                imagem: "img/galeria/gerenciador/tela02-login-e-cadastro.png",
+                titulo: "Tela de Login e Cadastro..."
             },
             {
-                imagem: "img/galeria/gerenciador/03-nova-tarefa.png",
-                titulo: "Cadastro de tarefas"
-            } 
+                imagem: "img/galeria/gerenciador/tela03-cadastro.png",
+                titulo: "Efetuando cadastro..."
+            },
+            {
+                imagem: "img/galeria/gerenciador/tela04-login.png",
+                titulo: "Efetuando login..."
+            },
+            {
+                imagem: "img/galeria/gerenciador/tela05-logado.png",
+                titulo: "Logado..."
+            },
+            {
+                imagem: "img/galeria/gerenciador/tela06-add-tarefas.png",
+                titulo: "Adcionando tarefas..."
+            },
+            {
+                imagem: "img/galeria/gerenciador/tela07-limpar-tarefas.png",
+                titulo: "Botão limpar tarefas..."
+            },
+             {
+                imagem: "img/galeria/gerenciador/tela08-exportar-tarefas.png",
+                titulo: "Botão exportar tarefas em PDF/Excel..."
+            }
+            // {
+            //     imagem: "img/galeria/gerenciador/tela07-limpar-perfil.png",
+            //     titulo: "Formulário de atualizar o perfil..."
+            // }
         ],
         //  ong: [
         //     {
