@@ -1218,9 +1218,6 @@ body.dark-mode .form-control:focus{
         margin-top: 23px;
         text-align: center;
     }
-    .hero .badge{
-    margin-top: 20px
-    }
     .hero h1 {
 
         font-size: 2.2rem;
@@ -1239,6 +1236,9 @@ body.dark-mode .form-control:focus{
     section{
      padding:70px 0;
     } */
+    .hero .badge{
+    margin-top: 20px
+    }
         .hero .btn {
         display: block;
         width: 100%;
