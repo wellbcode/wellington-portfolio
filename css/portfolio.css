@@ -1215,7 +1215,7 @@ body.dark-mode .form-control:focus{
 /* Resposivo */
 @media(max-width:768px){
     .hero {
-        margin-top: 23px;
+        padding-top: 100px;
         text-align: center;
     }
     .hero h1 {
@@ -1236,9 +1236,6 @@ body.dark-mode .form-control:focus{
     section{
      padding:70px 0;
     } */
-    .hero .badge{
-    margin-top: 20px
-    }
         .hero .btn {
         display: block;
         width: 100%;
