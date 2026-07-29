@@ -1235,14 +1235,10 @@ body.dark-mode .form-control:focus{
     section{
      padding:70px 0;
     } */
-    .row {
-    margin-left: 0;
-    margin-right: 0;
-}
     .badge{
-    margin-top: 50px
+        margin-top: 50px
     }
-        .hero .btn {
+    .hero .btn {
         display: block;
         width: 100%;
         margin: 0 0 12px 0;
@@ -1257,4 +1253,30 @@ body.dark-mode .form-control:focus{
         margin-bottom:10px;
         border-radius: 50px;
     }
+}
+
+@media(max-width:576px){
+
+    /* Corrige espaço lateral do Bootstrap */
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Ajusta legenda do carousel no celular */
+    .carousel-info {
+        margin-bottom: 35px;
+    }
+
+    .slide-titulo {
+        font-size: .9rem;
+        margin-left: 10px;
+    }
+
+    /* Mantém os indicadores afastados da legenda */
+    .carousel-indicators {
+        bottom: -5px;
+        margin-bottom: 0;
+    }
+
 }
